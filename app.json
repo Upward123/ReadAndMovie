@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/posts/posts",
+    "pages/posts/posts-detail/posts-detail",
+    "pages/movies/movies",
+    "pages/movies/more-movie/more-movie",
+    "pages/movies/detailMovie/detailMovie"
+  ],
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#405f80",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/posts/posts",
+        "text": "阅读",
+        "iconPath": "/icon/read.png",
+        "selectedIconPath": "/icon/selected-read.png"
+      },
+      {
+        "pagePath": "pages/movies/movies",
+        "text": "电影",
+        "iconPath": "/icon/movie.png",
+        "selectedIconPath": "/icon/selected-movie.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#405f80",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "requiredBackgroundModes": [
+    "audio"
+  ],
+  "sitemapLocation": "sitemap.json"
+}

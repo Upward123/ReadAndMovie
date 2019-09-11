@@ -1,0 +1,17 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 200rpx 0; */
+  box-sizing: border-box;
+} 
+text{
+  font-family: MicroSoft Yahei;
+  font-size: 28rpx;
+  color: #666;
+  letter-spacing: 4rpx;
+}
+

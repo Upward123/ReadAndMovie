@@ -1,0 +1,127 @@
+/* pages/posts/posts-detail/posts-detail.wxss */
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
+.head-img{
+  width: 100%;
+  height: 460rpx;
+}
+
+.audio{
+  width: 110rpx;
+  height: 110rpx;
+  border-radius: 50%;
+  /* 脱离文档流，使其浮动在图片上面 */
+  position: absolute;
+  /* 水平居中的方法 */
+  left: 50%;
+  /* 负的、本图片宽度的一半 */
+  margin-left: -51rpx;
+  /* 垂直居中 */
+  /* head-img的高度的一半，减去本图片高度的一半 */
+  top: 175rpx;
+  opacity: 0.6;
+}
+
+.author{
+  flex-direction: row;
+  width: 750rpx;
+  /* box-sizing: border-box; */
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+}
+
+.author-img{
+  width: 64rpx;
+  height: 64rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.author-who{
+  font-size: 35rpx;
+  font-weight: 300;
+  margin-left: 20rpx;
+  vertical-align: middle;
+  color: #666;
+  letter-spacing: 2px;
+}
+
+.author-text{
+  font-size: 28rpx;
+  margin-left: 20rpx;
+  color: #999;
+  letter-spacing: 2px;
+}
+
+.author-time{
+  font-size: 28rpx;
+  margin-left: 30rpx;
+  vertical-align: middle;
+  color: #999;
+} 
+
+.title{
+  width: 750rpx;
+  font-size: 40rpx;
+  font-weight: 700;
+  color: #4b556c;
+  letter-spacing: 2px;
+  margin-left: 80rpx;
+  margin-top: 30rpx;
+}
+
+.tool{
+  margin-top: 20rpx;
+  position: relative;
+}
+
+.icon{
+  float: right;
+  vertical-align: middle;
+}
+
+button{
+  position: absolute;
+  float: right;
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  /* css不支持引用图片资源，但是可以引用网络资源 */
+  /* background-image: "/detail-images/share.png"; */
+}
+
+.icon-share{
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+  margin-left: 30rpx;
+}
+
+.icon-collect{
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+}
+
+.line{
+  width: 660rpx;
+  height: 1px;
+  background-color: #e5e5e5;
+  position: relative;
+  z-index: -99;
+  /* vertical-align: middle; */
+  top: 46rpx;
+}
+
+.content{
+  margin: 20rpx 30rpx 0 30rpx;
+  line-height: 44rpx;
+  letter-spacing: 2px;
+  color: #666;
+}

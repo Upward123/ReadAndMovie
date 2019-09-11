@@ -1,0 +1,58 @@
+.container{
+  /* 把容器变成一个弹性的容器 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-avatar{
+  width: 200rpx;
+  height: 200rpx;
+  margin-top: 160rpx;
+}
+
+.user-name{
+  margin-top: 100rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.moto-container{
+  margin-top: 200rpx;
+  border: 1px solid #405f80;
+  width: 200rpx;
+  height: 80rpx;
+  border-radius: 5px;
+  /* 让容器中的字体水平居中 */
+  text-align: center;
+}
+
+.moto{
+  font-size: 22rpx;
+  font-weight: bold;
+  /* 让字体垂直居中 （设置line-height的值为容器的高度）*/
+  line-height: 80rpx;
+  color: #405f80;
+}
+
+.clear-container{
+  margin-top: 40rpx;
+  border: 1px solid #405f80;
+  width: 200rpx;
+  height: 80rpx;
+  border-radius: 5px;
+  /* 让容器中的字体水平居中 */
+  text-align: center;
+}
+
+.clear{
+  font-size: 22rpx;
+  font-weight: bold;
+  /* 让字体垂直居中 （设置line-height的值为容器的高度）*/
+  line-height: 80rpx;
+  color: #405f80;
+}
+
+page{
+  background-color: #b3d4db;
+}

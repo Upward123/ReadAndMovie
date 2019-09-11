@@ -1,0 +1,8 @@
+/* pages/movies/more-movie/more-movie.wxss */
+@import "../movie-grid-template/movie-grid-template.wxss";
+
+.more-movie-container{
+  width: 100%;
+  height: 1300rpx;
+}
+

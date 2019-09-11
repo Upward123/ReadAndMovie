@@ -1,0 +1,21 @@
+.star-template-container{
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  align-items: center;
+  width: 100%;
+  height: 50rpx;
+}
+
+.score-img image{
+  width: 20rpx;
+  height: 20rpx;
+  vertical-align: middle;
+  margin-right: 1px;
+}
+
+.score{
+  font-size: 30rpx;
+  vertical-align: middle;
+  margin-left: 30rpx;
+}

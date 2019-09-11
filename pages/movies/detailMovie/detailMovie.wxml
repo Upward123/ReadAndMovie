@@ -1,0 +1,60 @@
+<!--pages/movies/detailMovie/detailMovie.wxml-->
+<import src="../star-template/star-template.wxml" />
+<view id="wrap">
+  <view class="first">
+    <image class="head-img" catchtap='onPreviewImg' data-src="{{movies.headImg}}" src="{{movies.headImg}}" mode='aspectFill'></image>
+    <image class="side-img" catchtap='onPreviewImg' data-src="{{movies.headImg}}" src="{{movies.sideImg}}"></image>
+    <text class="img-title">{{movies.imgTitle}}</text>
+    <view class="img-countryAndTime">
+      <text class="img-CT">{{movies.country}}</text>
+      <text class="img-CT">·</text>
+      <text class="img-CT">{{movies.year}}</text>
+    </view>
+    <view class="img-view">
+      <text class="img-num">{{movies.like}}</text>
+      <text class="img-txt">人喜欢</text>
+      <text class="img-num">{{movies.comment}}</text>
+      <text class="img-txt">条评论</text>
+    </view>
+    <view class="first-down">
+      <text class="first-title">{{movies.firstTitle}}</text>
+      <view class="first-four">
+        <view class="first-c">
+          <text class="text-title">评分</text>
+          <view class="first-star">
+            <template is="star-template" data="{{stars:movies.stars,average:movies.average}}" />
+          </view>
+        </view>
+        <view class="first-c">
+          <text class="text-title">导演</text>
+          <text class="text-content">{{movies.director}}</text>
+        </view>
+        <view class="first-c">
+          <text class="text-title">影人</text>
+          <text class="text-content">{{movies.actor}}</text>
+        </view>
+        <view class="first-c">
+          <text class="text-title">类型</text>
+          <text class="text-content">{{movies.type}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="hr"></view>
+  <view class="second">
+    <text class="summary-title">剧情简介</text>
+    <text class='summary'>{{movies.summary}}</text>
+  </view>
+  <view class="hr"></view>
+  <view class="third">
+    <text class="text-title">影人</text>
+    <scroll-view class="third-actors" scroll-x="true">
+      <block wx:for="{{movies.actorShow}}" wx:key="key" wx:item="item">
+        <view class="third-actor">
+          <image class="actor-img" src="{{item.actorImg}}"></image>
+          <text class="actor-text">{{item.actorName}}</text>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+</view>

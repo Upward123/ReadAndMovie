@@ -1,0 +1,23 @@
+@import "../star-template/star-template.wxss";
+
+.movie-container{
+  width: 200rpx;
+  height: 400rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  margin: 0 25rpx;
+}
+
+.movie-template-movieImg{
+  width: 200rpx;
+  height: 270rpx;
+}
+
+.movie-template-title{
+  width: 200rpx;
+  height: 60rpx;
+  font-size: 30rpx;
+  line-height: 60rpx;
+}

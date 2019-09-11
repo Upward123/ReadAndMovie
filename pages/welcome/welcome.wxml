@@ -1,0 +1,14 @@
+<view class="container">
+  <image class="user-avatar" src="/images/p4.png"></image>
+  <text class="user-name">Hello,Upward</text>
+  <!-- text支持嵌套 -->
+  <!-- <text class="user-name"><text style="color:red">Hello</text>,Upward</text> -->
+  <!-- 支持转义字符 -->
+  <!-- <text>He \n llo</text> -->
+  <view class="moto-container" bindtap='onTap'>
+    <text class="moto">开启小程序之旅</text>
+  </view>
+  <view class="clear-container" bindtap='onClearTap'>
+    <text class="clear">清除所有缓存</text>
+  </view>
+</view>

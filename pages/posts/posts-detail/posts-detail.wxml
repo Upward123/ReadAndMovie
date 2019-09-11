@@ -1,0 +1,26 @@
+<!--pages/posts/posts-detail/posts-detail.wxml-->
+<!-- <import src="../../../data/posts-data.js" /> -->
+<view class="container">
+  <image class="head-img" src="{{isPlayingMusic?detailData.music.coverImg:detailData.post_img}}"></image>
+  <!-- <image class="head-img" src="{{detailData.post_img}}"></image> -->
+  <image catchtap='onMusicTap' class="audio" src="{{isPlayingMusic?'/detail-images/music-stop.png':'/detail-images/music-start.png'}}"></image>
+  <view class="author">
+    <image class="author-img" src="{{detailData.avatar_img}}"></image>
+    <text class="author-who">{{detailData.author}}</text>
+    <text class='author-text'>发表于</text>
+    <text class="author-time">{{detailData.date}}</text>
+  </view>
+  <text class="title">{{detailData.title}}</text>
+  <view class='tool'>
+    <view class="icon">
+      <image wx:if="{{collected}}" catchtap='onCollectTap' class="icon-collect" src="/detail-images/collection.png"></image>
+      <image wx:else catchtap='onCollectTap' class="icon-collect" src="/detail-images/collection-anti.png"></image>
+      <image catchtap='onShareTap' class="icon-share" src="/detail-images/share.png"></image>
+      <!-- 和js文件中的onShareAppMessage方法一起用，可以实现页面内按钮分享 -->
+      <!-- 注释后，只有js文件中的onShareAppMessage方法时，表示菜单分享 -->
+      <!-- <button open-type='share'></button> -->
+    </view>
+    <view class="line"></view>
+  </view>
+  <text class="content">{{detailData.detail_content}}</text>
+</view>

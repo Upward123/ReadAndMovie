@@ -1,0 +1,22 @@
+<template name="star-template">
+    <view class="star-template-container">
+      <view class="score-img">
+        <block wx:for = "{{stars}}" wx:key="key" wx:for-item="i">
+
+          <!-- 算半颗星 -->
+          <image wx:if="{{i==1}}" src="/icon/star.png"></image>
+          <image wx:elif="{{i==2}}" src="/icon/star-half.png"></image>
+          <image wx:else src="/icon/star-null.png"></image>
+          <!-- 只算整颗星，不算半颗星 -->
+          <!-- <image wx:if="{{i}}" src="/icon/star.png"></image>
+          <image wx:else src="/icon/star-null.png"></image> -->
+        </block>
+        <!-- <image src="/icon/star.png"></image>
+        <image src="/icon/star.png"></image>
+        <image src="/icon/star.png"></image>
+        <image src="/icon/star.png"></image>
+        <image src="/icon/star.png"></image> -->
+      </view>
+      <text class="score">{{average}}</text>
+    </view>
+</template>
